@@ -90,13 +90,13 @@
         document.getElementById(resulttext).style.display = "block";
       }
 
-      document.getElementById("firstbutton").addEventListener("click", initialFunction.bind('frostedpic','frootpic','question','frostedbutton','frootbutton'));
-      document.getElementById("frostedbutton").addEventListener("click", showFunction.bind('frostedpicture','chosefrostedtext,''question2','bambapic','elsepic','bambabutton','elsebutton'));
-      document.getElementById("frootbutton").addEventListener("click", showFunction.bind('frootpicture','chosefroottext','question2','bambapic','elsepic','bambabutton','elsebutton'));
-      document.getElementById("bambabutton").addEventListener("click", showFunction.bind('bambapicture','bambatext','question3','alonepic','togetherpic','alonebutton','elsebutton'));
-      document.getElementById("elsebutton").addEventListener("click", showFunction.bind('elsepicture','elsetext','question3','alonepic','togetherpic','alonebutton','elsebutton'));
-      document.getElementById("alonebutton").addEventListener("click", lastFunction.bind('alonepicture','alonetext'));
-      document.getElementById("togetherbutton").addEventListener("click", lastFunction.bind('togetherpicture','togethertext'));
+      document.getElementById("firstbutton").addEventListener("click", initialFunction('frostedpic','frootpic','question','frostedbutton','frootbutton'));
+      document.getElementById("frostedbutton").addEventListener("click", showFunction('frostedpicture','chosefrostedtext','question2','bambapic','elsepic','bambabutton','elsebutton'));
+      document.getElementById("frootbutton").addEventListener("click", showFunction('frootpicture','chosefroottext','question2','bambapic','elsepic','bambabutton','elsebutton'));
+      document.getElementById("bambabutton").addEventListener("click", showFunction('bambapicture','bambatext','question3','alonepic','togetherpic','alonebutton','elsebutton'));
+      document.getElementById("elsebutton").addEventListener("click", showFunction('elsepicture','elsetext','question3','alonepic','togetherpic','alonebutton','elsebutton'));
+      document.getElementById("alonebutton").addEventListener("click", lastFunction('alonepicture','alonetext'));
+      document.getElementById("togetherbutton").addEventListener("click", lastFunction('togetherpicture','togethertext'));
 
     </script>
   </body>
