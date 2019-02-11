@@ -8,13 +8,13 @@
     <h1>Definitely Not Bandersnatch!</h1>
     <h2>A Choose Your Own Adventure...</h2>
     <p>Would you like to play?</p>
-    <button onclick="initialFunction('frostedpic','frootpic','question','frostedbutton','frootbutton')">Yes!</button>
+    <button id = "firstbutton">Yes!</button>
 
     <p id = "question">Frosted Flakes or Froot Loops?</p>
     <img id = "frostedpic" src="frostedpic.jpg" alt="Frosted Flakes" />
     <img id = "frootpic" src="frootpic.jpg" alt="Froot Loops" />
-    <button id="frostedbutton" onclick="showFunction('frostedpicture','chosefrostedtext,''question2','bambapic','elsepic','bambabutton','elsebutton')">Frosted Flakes!</button>
-    <button id="frootbutton" onclick="showFunction('frootpicture','choicetext','question2','bambapic','elsepic','bambabutton','elsebutton')">Froot Loops!</button>
+    <button id="frostedbutton">Frosted Flakes!</button>
+    <button id="frootbutton">Froot Loops!</button>
     <img id = "frostedpicture" src="frostedpic.jpg" alt="Frosted Flakes" />
     <img id = "frootpicture" src="frootpic.jpg" alt="Froot Loops">
     <p id = "chosefrostedtext">You chose Frosted Flakes.</p>
@@ -23,8 +23,8 @@
     <p id = "question2">What song would you like to listen to?</p>
     <img id = "bambapic" src="mobambapic.jpg" alt="Mo Bamba">
     <img id = "elsepic" src="badmusicpic.jpg" alt="MY EARS!">
-    <button id="bambabutton" onclick="showFunction('bambapicture','bambatext','question3','alonepic','togetherpic','alonebutton','elsebutton')">Mo Bamba</button>
-    <button id="elsebutton" onclick="showFunction('elsepicture','elsetext','question3','alonepic','togetherpic','alonebutton','elsebutton')">Literally Anything Else</button>
+    <button id="bambabutton">Mo Bamba</button>
+    <button id="elsebutton">Literally Anything Else</button>
     <img id = "bambapicture" src="mobambapic.jpg" alt="MO BAMBA!">
     <img id = "elsepicture" src="badmusicpic.jpg" alt="ANYTHING ELSE!">
     <p id = "bambatext">You chose Mo Bamba.</p>
@@ -33,8 +33,8 @@
     <p id = "question 3">Final question. Would you like to work alone on your great project, or with a team?</p>
     <img id = "alonepic" src="alonepic.jpg" alt="Alone">
     <img id = "togetherpic" src="teampic.jpg" alt="With a team">
-    <button id="alonebutton" onclick="lastFunction('alonepicture','alonetext')">Alone</button>
-    <button id="togetherbutton" onclick="lastFunction('togetherpicture','togethertext')">With a team</button>
+    <button id="alonebutton">Alone</button>
+    <button id="togetherbutton">With a team</button>
     <img id = "alonepicture" src="alonepic.jpg" alt="Alone">
     <img id = "togetherpicture" src="teampic.jpg" alt="With a team">
     <p id = "alonetext">You chose to work alone. In the game that is the correct decision, but in the real world it's definitely not!</p>
@@ -89,6 +89,15 @@
         document.getElementById(resultpicture).style.display = "block";
         document.getElementById(resulttext).style.display = "block";
       }
+
+      document.getElementById("firstbutton").addEventListener("click",initialFunction('frostedpic','frootpic','question','frostedbutton','frootbutton'))
+      document.getElementById("frostedbutton").addEventListener("click",showFunction('frostedpicture','chosefrostedtext,''question2','bambapic','elsepic','bambabutton','elsebutton'))
+      document.getElementById("frootbutton").addEventListener("click",showFunction('frootpicture','chosefroottext','question2','bambapic','elsepic','bambabutton','elsebutton'))
+      document.getElementById("bambabutton").addEventListener("click",showFunction('bambapicture','bambatext','question3','alonepic','togetherpic','alonebutton','elsebutton'))
+      document.getElementById("elsebutton").addEventListener("click",showFunction('elsepicture','elsetext','question3','alonepic','togetherpic','alonebutton','elsebutton'))
+      document.getElementById("alonebutton").addEventListener("click",lastFunction('alonepicture','alonetext'))
+      document.getElementById("togetherbutton").addEventListener("click",lastFunction('togetherpicture','togethertext')")
+
     </script>
   </body>
 </html>
