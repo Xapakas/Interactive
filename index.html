@@ -8,18 +8,28 @@
     <h1>Bandersnatch!</h1>
     <h2>A Choose Your Own Adventure...</h2>
     <p>Would you like to play?</p>
-    <button onclick="ShowFunction()">Yes!</button>
-    <p>Frosted Flakes or Fruit Loops?</p>
-    <button id="frostedbutton" onclick="ShowFunction()">Frosted Flakes!</button>
-    <button id="fruitbutton" onclick="ShowFunction()">Fruit Loops!</button>
-    <p>What song would you like to listen to?</p>
-    <button id="mambabutton">Mo Bamba!</button>
-    <button id="otherbutton" onclick="Showfunction()">Literally any other song!</button>
+    <button onclick="InitialFunction('firstquestion','frostedbutton','fruitbutton')">Yes!</button>
+    <p id = "firstquestion">Frosted Flakes or Fruit Loops?</p>
+    <button id="frostedbutton" onclick="ShowFunction('frostedpicture','secondquestion','mambabutton','elsebutton')">Frosted Flakes!</button>
+    <button id="fruitbutton" onclick="ShowFunction('fruitpicture','secondquestion','mambabutton','elsebutton')">Fruit Loops!</button>
+    <p id="frostedpicture">Frosted Flakes</p>
+    <p id="fruitpicture">Fruit Loops</p>
+    <p id="secondquestion">What song would you like to listen to?</p>
+    <button id="mambabutton">Mo Bamba</button>
+    <button id="elsebutton">Literally Anything Else</button>
+    <p id="alonetext">This may be the correct choice in the game, but in the real world, you'll have to work with others!</p>
+    <p id="otherstext">This may be the wrong choice in the game, but in the real world, you made the right choice!</p>
+    <p id="endtext">Thanks for playing!</p>
     <script type="text/javascript">
+      function InitialFunction("text","button1","button2") {
+        document.getElementById(text).style.display = "block";
+        document.getElementById(button1).style.display = "block";
+        document.getElementById(button2).style.display = "block";
+      }
       function ShowFunction("picture","text","button1","button2") {
-    
-      }    
-      
+
+      }
+
     </script>
   </body>
 </html>
