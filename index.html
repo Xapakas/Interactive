@@ -72,24 +72,24 @@
       document.getElementById("togethertext").style.display = "none";
 
       function initialFunction(picture1,picture2,question,button1,button2) {
-        document.getElementById(picture1).style.display = "block";
-        document.getElementById(picture2).style.display = "block";
-        document.getElementById(question).style.display = "block";
-        document.getElementById(button1).style.display = "block";
-        document.getElementById(button2).style.display = "block";
+        document.getElementById(picture1).style.display = "inline";
+        document.getElementById(picture2).style.display = "inline";
+        document.getElementById(question).style.display = "inline";
+        document.getElementById(button1).style.display = "inline";
+        document.getElementById(button2).style.display = "inline";
       }
       function showFunction(resultpicture,choicetext,question,picture1,picture2,button1,button2) {
-        document.getElementById(resultpicture).style.display = "block";
-        document.getElementById(choicetext).style.display = "block";
-        document.getElementById(question).style.display = "block";
-        document.getElementById(picture1).style.display = "block";
-        document.getElementById(picture2).style.display = "block";
-        document.getElementById(button1).style.display = "block";
-        document.getElementById(button2).style.display = "block";
+        document.getElementById(resultpicture).style.display = "inline";
+        document.getElementById(choicetext).style.display = "inline";
+        document.getElementById(question).style.display = "inline";
+        document.getElementById(picture1).style.display = "inline";
+        document.getElementById(picture2).style.display = "inline";
+        document.getElementById(button1).style.display = "inline";
+        document.getElementById(button2).style.display = "inline";
       }
       function lastFunction(resultpicture,resulttext) {
-        document.getElementById(resultpicture).style.display = "block";
-        document.getElementById(resulttext).style.display = "block";
+        document.getElementById(resultpicture).style.display = "inline";
+        document.getElementById(resulttext).style.display = "inline";
       }
 
       document.getElementById("firstbutton").addEventListener("click", function(){initialFunction('frostedpic','frootpic','question','frostedbutton','frootbutton')});
